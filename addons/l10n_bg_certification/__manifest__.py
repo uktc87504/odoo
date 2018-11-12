@@ -1,0 +1,31 @@
+# -*- coding: utf-8 -*-
+# Part of Odoo. See LICENSE file for full copyright and licensing details.
+
+{
+    'name': 'Bulgaria - N-18 Anti-Fraud Certification',
+    'version': '1.0',
+    'category': 'Localization',
+    'description': """
+This add-on brings the technical requirements of the Bulgarian regulation N-18 that stipulates certain criteria concerning the inalterability, security, storage and archiving of data related to sales (including online).
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+The module adds following features:
+
+    Inalterability: deactivation of all the ways to cancel or modify key data, invoices and journal entries
+
+    Security: chaining algorithm to verify the inalterability
+
+    Storage: automatic sales closings with computation of both period and cumulative totals (daily, monthly, annually)
+
+    Access to download the mandatory Certificate of Conformity delivered by Odoo SA (only for Odoo Enterprise users)
+""",
+    'depends': ['l10n_bg'],
+    'installable': True,
+    'auto_install': False,
+    'application': False,
+    'data': [
+        'data/account_move.xml',
+        'views/res_config.xml',
+    ],
+    'post_init_hook': '_setup_inalterability',
+}
