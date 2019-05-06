@@ -8,6 +8,8 @@ Odoo
 
 Odoo is a suite of web based open source business apps.
 
+<a href="https://www.nedelya.ro/">Nedelya Romania dependancies</a>
+
 The main Odoo Apps include an <a href="https://www.odoo.com/page/crm">Open Source CRM</a>,
 <a href="https://www.odoo.com/page/website-builder">Website Builder</a>,
 <a href="https://www.odoo.com/page/e-commerce">eCommerce</a>,
