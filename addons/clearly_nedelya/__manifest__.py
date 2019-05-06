@@ -1,27 +1,16 @@
-# -*- coding: utf-8 -*-
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
+# Copyright  2015 Forest and Biomass Romania
+# License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
 
 {
-    'name': 'Clearly Nedelya',
-    'category': 'Accounting',
-    'description': """
-This module gathers dependancies for nedelya.ro's odoo solution.
-==========================================================================
-Once the POS-es are defined (in Point of Sale/Configuration/Point of Sales), the Managers
-can set the parameters for each PoS. Like users, POSBox address, etc.
-
-The accountant has the possibility to see the total of amount per PoS.
-
-Three reports are available:
-----------------------------
-    1. The first is 
-    2. The second is 
-    3. The last one is
-""",
-    'website': 'http://www.clearlypro.eu/erp',
-    'depends': ['account'],
-    'data': [
-        'views/res_config_settings_views.xml',
-    ],
-    'demo': ['data/clearly_nedelya_demo.xml'],
+    'name': 'Clearly Nedelya RO',
+    'summary': 'Romania - encapsulate modules for Nedelya solution',
+    'version': '11.0.1.0.0',
+    'category': 'Localization',
+    'author': 'Clearly Pro Ltd., '
+              'Odoo Community Association (OCA)',
+    'website': 'http://www.clearlypro.eu',
+    'license': 'AGPL-3',
+    'installable': True,
+    'depends': ['l10n_ro', 'base_vat_autocomplete', 'l10n_ro_partner_create_by_vat'],
+    'data': [],
 }
